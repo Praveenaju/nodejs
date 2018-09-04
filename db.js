@@ -23,7 +23,7 @@ app.get('/', function (req, res) {
            
         // query to the database and get the records
         request.query('select * from persons', function (err, recordset) {
-            
+            alert('sucess');
             if (err) console.log(err)
 
             // send records as a response
