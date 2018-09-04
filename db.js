@@ -7,10 +7,10 @@ app.get('/', function (req, res) {
 
     // config for your database
     var config = {
-        user: 'uno',
-        password: 'uno',
-        server: '192.169.1.101\\stfc2012', 
-        database: 'STFCUNO_DEV' 
+        user: 'mydb35',
+        password: 'Mypwd35',
+        server: 'den1.mssql3.gear.host', 
+        database: 'mydb35' 
     };
 
     // connect to your database
@@ -22,7 +22,7 @@ app.get('/', function (req, res) {
         var request = new sql.Request();
            
         // query to the database and get the records
-        request.query('Select top 10 * from LGen_Documents', function (err, recordset) {
+        request.query('select * from persons', function (err, recordset) {
             
             if (err) console.log(err)
 
