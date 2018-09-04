@@ -8,7 +8,7 @@ app.get('/', function (req, res) {
     // config for your database
     var config = {
         user: 'mydb35',
-        password: 'Mypwd35',
+        password: 'Mypwd@23',
         server: 'den1.mssql3.gear.host', 
         database: 'mydb35' 
     };
