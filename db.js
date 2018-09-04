@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 
 app.get('/', function (req, res) {
-   
+ alert('sucess1');
     var sql = require("mssql");
 
     // config for your database
